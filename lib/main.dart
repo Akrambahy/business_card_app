@@ -24,6 +24,7 @@ class BusinessCardApp extends StatelessWidget {
                 ),
               ),
             ),
+
             Text(
               "Akram Bahy",
               style: TextStyle(
@@ -32,6 +33,7 @@ class BusinessCardApp extends StatelessWidget {
                 fontFamily: "Pacifico",
               ),
             ),
+
             Text(
               "Software Engineer",
               style: TextStyle(
@@ -41,13 +43,59 @@ class BusinessCardApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.phone, size: 45, color: Color(0xFF2b415a),)
-                  , Text("(+20) 1212524827",style:TextStyle(fontSize:25 )),
-                ],
+
+            Padding(
+              padding: EdgeInsets.all(12),
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12),
+                      child: Icon(
+                        Icons.phone,
+                        size: 45,
+                        color: Color(0xFF2b415a),
+                      ),
+                    ),
+                    Spacer(flex: 1),
+                    Text("(+20) 12125254827", style: TextStyle(fontSize: 25)),
+                    Spacer(flex: 2),
+                  ],
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: EdgeInsets.all(12),
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12),
+                      child: Icon(
+                        Icons.mail,
+                        size: 45,
+                        color: Color(0xFF2b415a),
+                      ),
+                    ),
+                    Spacer(flex: 1),
+                    Text(
+                      "akrambhay0@gmail.com ",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Spacer(flex: 3),
+                  ],
+                ),
               ),
             ),
           ],
