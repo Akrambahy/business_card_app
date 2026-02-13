@@ -14,7 +14,7 @@ class BusinessCardApp extends StatelessWidget {
         backgroundColor: Color(0xFF2b415a),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 0),
               child: CircleAvatar(
@@ -80,32 +80,35 @@ class BusinessCardApp extends StatelessWidget {
               ),
             ),
 
-            Padding(
-              padding: EdgeInsets.all(12),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
+            Container(
+              margin: EdgeInsets.all(12),
+              height: 65,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12),
+                    child: Icon(Icons.mail, size: 45, color: Color(0xFF2b415a)),
+                  ),
+                  Spacer(flex: 1),
+                  Text("akrambhay0@gmail.com ", style: TextStyle(fontSize: 25)),
+                  Spacer(flex: 3),
+                ],
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.all(12),
+
+              child: ListTile(
+                leading: Icon(
+                  Icons.facebook,
+                  size: 45,
+                  color: Color(0xFF2b415a),
                 ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 12),
-                      child: Icon(
-                        Icons.mail,
-                        size: 45,
-                        color: Color(0xFF2b415a),
-                      ),
-                    ),
-                    Spacer(flex: 1),
-                    Text(
-                      "akrambhay0@gmail.com ",
-                      style: TextStyle(fontSize: 25),
-                    ),
-                    Spacer(flex: 3),
-                  ],
-                ),
+                title: Text("ᎯᏦᏒᎯᎷ ᏰᎯᎻᎽ", style: TextStyle(fontSize: 25)),
               ),
             ),
           ],
